@@ -1,6 +1,6 @@
 # Universal Code v1.0.0
 
-**Canonical source**: This document  
+**Canonical source**: https://github.com/monkeyking-hq/universal-code/blob/main/UC-v1.0.0.md
 **Purpose**: A simple, semantically versioned ethical foundation for AI agents, models, and systems.  
 **Status**: First proper version.
 
