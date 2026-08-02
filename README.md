@@ -1,2 +1,2 @@
-# universal-code
-A universal code for the open internet
+# Universal Code - V1.0
+
