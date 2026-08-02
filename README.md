@@ -17,10 +17,9 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 
 ## How to Use It
 
-- Embed the **compact form** directly in system prompts and always reference it by version (`Universal Code v0.1.0`).
+- Embed the **compact form** directly in system prompts and always reference it by version (`Universal Code v1.0.0`).
 - Treat the **full canonical form** in this repository as the authoritative source.
 - Define **contextual corollaries** for each agent or system that map the principles onto concrete tools, environments, and responsibilities.
-- High-impact scripts or actions that affect production, staging, or shared environments require dual human approval (DevOps + Security) before execution (except for explicitly sandboxed local development).
 
 ## How We Made It
 
