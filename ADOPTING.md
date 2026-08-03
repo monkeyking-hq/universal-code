@@ -136,9 +136,10 @@ Always name the **version**. When you upgrade, bump the version string so audits
 
 ---
 
-## Pin punctuation and scope
+## Encoding and pin scope
 
-- **Use ASCII hyphens only** in pin lines and examples (` - `, not a Unicode em dash or en dash). That matches this repository's Code docs and README. Do not introduce fancy dashes when copying the pin into your tree.
+- **Save every adopted file as UTF-8** (no legacy code pages, no mixed encodings). That is the baseline for portable Markdown and for agents reading pins across OSes.
+- Prefer characters that common tools parse cleanly. Avoid introducing glyphs that break your formatter, frontmatter parser, or editor when mis-encoded. Valid Unicode is fine when the file is real UTF-8; the failure mode is bad encoding or half-converted copy-paste, not "anything outside ASCII."
 - You do **not** need to restate every Foundational Principle in each module `AGENTS.md`. One clear pin (or root pin + module pointer) is enough; use module files for **contextual corollaries** (tools, environments, product rules).
 
 ---
