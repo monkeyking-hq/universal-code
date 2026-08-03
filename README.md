@@ -5,11 +5,11 @@
 
 ## Overview
 
-The Universal Code is a simple, semantically versioned ethical foundation designed for AI agents, models, and systems. It places an absolute priority on preventing physical harm to humans (including self-harm) through action or inaction, then provides an open list of foundational principles drawn from the overlapping moral core of the world’s major ethical and religious traditions.
+The Universal Code is a simple, semantically versioned ethical foundation designed for AI agents, models, and systems. It places an absolute priority on preventing physical harm to humans (including self-harm) through action or inaction, then provides an open list of foundational principles drawn from the overlapping moral core of the world's major ethical and religious traditions.
 
 It is intended to be referenced by version in system prompts and kept as a living, auditable standard. 🌱
 
-## Why It’s Needed
+## Why It's Needed
 
 AI agents increasingly take real-world actions that can affect human safety, trust, and systems. Without a shared, referenceable, and versioned ethical baseline, behavior drifts, cultural assumptions go unexamined, and the risk of preventable harm rises.
 
@@ -28,7 +28,7 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 Put a pin at the top of the file so every agent session inherits the baseline:
 
 ```markdown
-This project follows the Universal Code v1.0.0 — read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
+This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
 ```
 
 **2. System prompt (compact embed)**
@@ -66,8 +66,8 @@ When contributing, please:
 - Reference the specific principle or section you are addressing
 - Explain the rationale and any supporting tradition, practical need, or edge case
 - Follow semantic versioning expectations:
-  - **MAJOR** — Breaking changes to the Supreme Principle or core structure
-  - **MINOR** — New principles or significant clarifications
-  - **PATCH** — Wording improvements and non-breaking refinements
+  - **MAJOR** - Breaking changes to the Supreme Principle or core structure
+  - **MINOR** - New principles or significant clarifications
+  - **PATCH** - Wording improvements and non-breaking refinements
 
 All constructive contributions are welcome. 🤝
