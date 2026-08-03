@@ -3,8 +3,14 @@
 This guide covers **production-minded** adoption: monorepos, AI code review bots, nested `AGENTS.md` files, and keeping a durable, auditable pin. For the one-line demo, see the [README](README.md).
 
 **Current version:** 1.0.0  
-**Full form:** [`UC-v1.0.0.md`](UC-v1.0.0.md)  
-**Embed form:** [`UC-EMBED-v1.0.0.md`](UC-EMBED-v1.0.0.md)
+**Full form (repo):** [`UC-v1.0.0.md`](UC-v1.0.0.md)  
+**Embed form (repo):** [`UC-EMBED-v1.0.0.md`](UC-EMBED-v1.0.0.md)  
+**Public site:** https://uc.monkeyking.dev/  
+**Versioned public URLs (immutable after publish):**  
+- Full: https://uc.monkeyking.dev/v1.0.0/UC-v1.0.0.md  
+- Embed: https://uc.monkeyking.dev/v1.0.0/UC-EMBED-v1.0.0.md  
+
+Git remains the editable source of truth. The site is a static publish of versioned paths. **Never rewrite** files under an already published `/vX.Y.Z/` path; ship a new version directory instead.
 
 ---
 
@@ -21,9 +27,9 @@ Do not point the project README only at the embed, or agent pins only at the ful
 
 ## Choose a pin strategy
 
-Reviewers (and security-minded orgs) treat a live third-party URL as a dependency. Ranked options:
+Reviewers treat a **mutable, third-party** URL (for example floating GitHub `main`) as a dependency risk. Ranked options:
 
-### 1. Vendor (recommended for monorepos and gated orgs)
+### 1. Vendor (recommended for monorepos and offline / gated orgs)
 
 Copy both files into your repository (example layout):
 
@@ -58,9 +64,17 @@ This project follows the [Universal Code v1.0.0](docs/policies/UC-v1.0.0.md) (ve
 
 When you upgrade: re-copy both files, bump the version string in every pin, update the provenance SHA.
 
-### 2. Pin an immutable upstream commit (no local copy)
+### 2. Versioned public URL on uc.monkeyking.dev (no local copy)
 
-Replace `main` with a commit SHA so the link cannot silently move:
+Use a **version path** that is never rewritten after publish:
+
+```markdown
+This project follows the Universal Code v1.0.0 - read https://uc.monkeyking.dev/v1.0.0/UC-EMBED-v1.0.0.md
+```
+
+This mitigates "floating third-party `main`" by putting an immutable path under a domain you control. It does **not** remove network dependency; for offline or max integrity, still vendor or hash-check in CI.
+
+### 3. Pin a GitHub commit SHA (no local copy)
 
 ```markdown
 This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/<sha>/UC-EMBED-v1.0.0.md
@@ -68,13 +82,13 @@ This project follows the Universal Code v1.0.0 - read https://github.com/monkeyk
 
 Still cite the **version** (`v1.0.0`) in the sentence so audits do not depend on decoding the SHA alone.
 
-### 3. Live `main` URL (quick experiments only)
+### 4. Live GitHub `main` URL (quick experiments only)
 
 ```markdown
 This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
 ```
 
-Acceptable for spikes and personal repos. Expect automated reviewers to suggest (1) or (2) for production monorepos.
+Acceptable for spikes. Expect automated reviewers to prefer (1) or (2) for production monorepos.
 
 ---
 

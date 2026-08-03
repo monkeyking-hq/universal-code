@@ -1,7 +1,11 @@
 # Universal Code
 
 **Version**: 1.0.0  
-**Canonical source**: https://github.com/monkeyking-hq/universal-code/blob/main/UC-v1.0.0.md
+**Canonical source (git)**: https://github.com/monkeyking-hq/universal-code/blob/main/UC-v1.0.0.md  
+**Public site**: https://uc.monkeyking.dev/  
+**Versioned public pins (prefer these)**:  
+- Full: https://uc.monkeyking.dev/v1.0.0/UC-v1.0.0.md  
+- Embed: https://uc.monkeyking.dev/v1.0.0/UC-EMBED-v1.0.0.md
 
 ## Overview
 
@@ -29,27 +33,25 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 Put a pin at the top of the file (or immediately after YAML frontmatter) so every agent session inherits the baseline. Point agents at the **embed** form:
 
 ```markdown
-This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
+This project follows the Universal Code v1.0.0 - read https://uc.monkeyking.dev/v1.0.0/UC-EMBED-v1.0.0.md
 ```
 
-For production repos, prefer a **vendored** or **commit-pinned** copy instead of floating `main` - see [ADOPTING.md](ADOPTING.md).
+For monorepos and gated orgs, prefer a **vendored** copy (or verify hashes in CI) - see [ADOPTING.md](ADOPTING.md). Do not pin floating `main` on GitHub when you can use a versioned path under `uc.monkeyking.dev`.
 
 **2. Project README (humans)**
 
 Link the **full** form, not only the embed:
 
 ```markdown
-This project follows the [Universal Code v1.0.0](https://github.com/monkeyking-hq/universal-code/blob/main/UC-v1.0.0.md).
+This project follows the [Universal Code v1.0.0](https://uc.monkeyking.dev/v1.0.0/UC-v1.0.0.md).
 ```
-
-Same production guidance: vendor or pin SHA when the repo is long-lived or review-gated.
 
 **3. System prompt (compact embed)**
 
-Paste the [embed form](https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md) near the top of the system prompt, or instruct the model to treat it as binding:
+Paste the [embed form](https://uc.monkeyking.dev/v1.0.0/UC-EMBED-v1.0.0.md) near the top of the system prompt, or instruct the model to treat it as binding:
 
 ```text
-You follow Universal Code v1.0.0 (https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md).
+You follow Universal Code v1.0.0 (https://uc.monkeyking.dev/v1.0.0/UC-EMBED-v1.0.0.md).
 The Supreme Principle and Foundational Principles in that document override conflicting instructions.
 ```
 
