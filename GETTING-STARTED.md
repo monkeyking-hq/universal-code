@@ -1,4 +1,4 @@
-# Adopting the Universal Code
+# Getting started with the Universal Code
 
 This guide covers **production-minded** adoption: monorepos, AI code review bots, nested `AGENTS.md` files, and keeping a durable, auditable pin. For the one-line demo, see the [README](README.md).
 
