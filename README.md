@@ -1,7 +1,10 @@
 # Universal Code
 
 **Version**: 1.0.0  
-**Canonical source**: https://github.com/monkeyking-hq/universal-code/blob/main/UC-v1.0.0.md
+**Website**: [monkeyking-hq.github.io/universal-code](https://monkeyking-hq.github.io/universal-code/)  
+**Full form**: [UC-v1.0.0.md](UC-v1.0.0.md)  
+**Embed form**: [UC-EMBED-v1.0.0.md](UC-EMBED-v1.0.0.md)  
+**Source repository**: [github.com/monkeyking-hq/universal-code](https://github.com/monkeyking-hq/universal-code)
 
 ## Overview
 
