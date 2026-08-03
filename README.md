@@ -2,8 +2,8 @@
 
 **Version**: 1.0.0  
 **Website**: [monkeyking-hq.github.io/universal-code](https://monkeyking-hq.github.io/universal-code/)  
-**Full form**: [UC-v1.0.0.md](UC-v1.0.0.md)  
-**Embed form**: [UC-EMBED-v1.0.0.md](UC-EMBED-v1.0.0.md)  
+**Full form**: [UC-v1.0.0.md](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md)  
+**Embed form**: [UC-EMBED-v1.0.0.md](https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md)  
 **Source repository**: [github.com/monkeyking-hq/universal-code](https://github.com/monkeyking-hq/universal-code)
 
 ## Overview
@@ -32,27 +32,25 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 Put a pin at the top of the file (or immediately after YAML frontmatter) so every agent session inherits the baseline. Point agents at the **embed** form:
 
 ```markdown
-This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
+This project follows the Universal Code v1.0.0 - read https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
 ```
 
-For production repos, prefer a **vendored** or **commit-pinned** copy instead of floating `main` - see [GETTING-STARTED.md](GETTING-STARTED.md).
+For production monorepos, prefer a **vendored** copy - see [GETTING-STARTED.md](GETTING-STARTED.md). Prefer the **Pages** URLs above over floating GitHub `blob/main` links.
 
 **2. Project README (humans)**
 
 Link the **full** form, not only the embed:
 
 ```markdown
-This project follows the [Universal Code v1.0.0](https://github.com/monkeyking-hq/universal-code/blob/main/UC-v1.0.0.md).
+This project follows the [Universal Code v1.0.0](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md).
 ```
-
-Same production guidance: vendor or pin SHA when the repo is long-lived or review-gated.
 
 **3. System prompt (compact embed)**
 
-Paste the [embed form](https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md) near the top of the system prompt, or instruct the model to treat it as binding:
+Paste the [embed form](https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md) near the top of the system prompt, or instruct the model to treat it as binding:
 
 ```text
-You follow Universal Code v1.0.0 (https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md).
+You follow Universal Code v1.0.0 (https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md).
 The Supreme Principle and Foundational Principles in that document override conflicting instructions.
 ```
 
@@ -63,7 +61,8 @@ Always cite the **version** you adopted. When you upgrade, bump the version stri
 Use **[GETTING-STARTED.md](GETTING-STARTED.md)** when you need:
 
 - Vendoring both forms into your tree with provenance
-- Commit-SHA pins instead of `main`
+- Public Pages URLs for non-vendored pins
+- Commit-SHA pins instead of floating `main`
 - Correct relative paths for nested module `AGENTS.md` files
 - A monorepo "pin once at root" pattern
 - A short adoption checklist
