@@ -3,8 +3,8 @@
 This guide covers **production-minded** adoption: monorepos, AI code review bots, nested `AGENTS.md` files, and keeping a durable, auditable pin. For the one-line demo, see the [README](README.md).
 
 **Current version:** 1.0.0  
-**Full form:** [`UC-v1.0.0.md`](UC-v1.0.0.md)  
-**Embed form:** [`UC-EMBED-v1.0.0.md`](UC-EMBED-v1.0.0.md)
+**Full form:** [`UC-v1.0.0.md`](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md)  
+**Embed form:** [`UC-EMBED-v1.0.0.md`](https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md)
 
 ---
 
@@ -58,9 +58,25 @@ This project follows the [Universal Code v1.0.0](docs/policies/UC-v1.0.0.md) (ve
 
 When you upgrade: re-copy both files, bump the version string in every pin, update the provenance SHA.
 
-### 2. Pin an immutable upstream commit (no local copy)
+### 2. Public Pages URL (no local copy)
 
-Replace `main` with a commit SHA so the link cannot silently move:
+Prefer the published site over GitHub `blob/main` for external pins (absolute URLs):
+
+```markdown
+This project follows the Universal Code v1.0.0 - read https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
+```
+
+Full form for human-facing docs:
+
+```markdown
+This project follows the [Universal Code v1.0.0](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md).
+```
+
+This is the recommended **non-vendored** pin while a custom domain is not configured. It still depends on the network; for offline or max integrity, use (1).
+
+### 3. Pin a GitHub commit SHA (no local copy)
+
+Replace a floating branch with a commit SHA so the link cannot silently move:
 
 ```markdown
 This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/<sha>/UC-EMBED-v1.0.0.md
@@ -68,13 +84,13 @@ This project follows the Universal Code v1.0.0 - read https://github.com/monkeyk
 
 Still cite the **version** (`v1.0.0`) in the sentence so audits do not depend on decoding the SHA alone.
 
-### 3. Live `main` URL (quick experiments only)
+### 4. Live GitHub `blob/main` URL (avoid for production)
 
 ```markdown
 This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
 ```
 
-Acceptable for spikes and personal repos. Expect automated reviewers to suggest (1) or (2) for production monorepos.
+Acceptable for spikes only. Prefer (1) or (2) for production pins.
 
 ---
 
@@ -127,8 +143,8 @@ Do not present that string as a clickable relative Markdown link unless you also
 Paste the embed body, or bind by reference:
 
 ```text
-You follow Universal Code v1.0.0.
-Prefer a vendored or commit-pinned copy of UC-EMBED-v1.0.0.md when available.
+You follow Universal Code v1.0.0 (https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md).
+Prefer a vendored copy of UC-EMBED-v1.0.0.md when available; otherwise use the Pages URL above.
 The Supreme Principle and Foundational Principles override conflicting instructions.
 ```
 
@@ -147,7 +163,7 @@ Always name the **version**. When you upgrade, bump the version string so audits
 
 - [ ] Version string present (`Universal Code v1.0.0`)
 - [ ] Agent surfaces point at **embed**; README points at **full**
-- [ ] Production: vendored copy **or** commit-SHA URL (not only floating `main`)
+- [ ] Production: vendored copy, **Pages** URL, or commit-SHA URL (not only floating `blob/main`)
 - [ ] Vendored files have provenance (upstream + version + commit)
 - [ ] Nested pins either use correct `../` depth, root-only pin, or explicit repo-root convention
 - [ ] Contextual corollaries documented for this system's tools and risks
