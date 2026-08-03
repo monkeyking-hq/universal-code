@@ -33,6 +33,7 @@ This repository is intentionally small. The primary artifacts are:
 
 - `UC-v1.0.0.md` - full canonical version
 - `UC-EMBED-v1.0.0.md` - compact form for system prompts
+- `ADOPTING.md` - production adoption guidance (vendoring, pins, monorepos)
 - Supporting community files (README, LICENSE, etc.)
 
 Small fixes to documentation, links, or formatting are welcome via pull request once discussed if non-trivial. 🛠️
