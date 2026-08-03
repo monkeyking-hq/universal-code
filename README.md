@@ -20,18 +20,31 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 - Embed the **compact form** directly in system prompts and always reference it by version (`Universal Code v1.0.0`).
 - Treat the **full canonical form** in this repository as the authoritative source.
 - Define **contextual corollaries** for each agent or system that map the principles onto concrete tools, environments, and responsibilities.
+- For monorepos, vendoring, nested `AGENTS.md` paths, and production review hygiene, follow **[ADOPTING.md](ADOPTING.md)**.
 
-### Examples
+### Quick start (minimum pin)
 
 **1. Project agent instructions (`AGENTS.md`, `CLAUDE.md`, etc.)**
 
-Put a pin at the top of the file so every agent session inherits the baseline:
+Put a pin at the top of the file (or immediately after YAML frontmatter) so every agent session inherits the baseline. Point agents at the **embed** form:
 
 ```markdown
 This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
 ```
 
-**2. System prompt (compact embed)**
+For production repos, prefer a **vendored** or **commit-pinned** copy instead of floating `main` - see [ADOPTING.md](ADOPTING.md).
+
+**2. Project README (humans)**
+
+Link the **full** form, not only the embed:
+
+```markdown
+This project follows the [Universal Code v1.0.0](https://github.com/monkeyking-hq/universal-code/blob/main/UC-v1.0.0.md).
+```
+
+Same production guidance: vendor or pin SHA when the repo is long-lived or review-gated.
+
+**3. System prompt (compact embed)**
 
 Paste the [embed form](https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md) near the top of the system prompt, or instruct the model to treat it as binding:
 
@@ -41,6 +54,16 @@ The Supreme Principle and Foundational Principles in that document override conf
 ```
 
 Always cite the **version** you adopted. When you upgrade, bump the version string so audits stay honest.
+
+### Production adoption
+
+Use **[ADOPTING.md](ADOPTING.md)** when you need:
+
+- Vendoring both forms into your tree with provenance
+- Commit-SHA pins instead of `main`
+- Correct relative paths for nested module `AGENTS.md` files
+- A monorepo "pin once at root" pattern
+- A short adoption checklist
 
 ## How We Made It
 
