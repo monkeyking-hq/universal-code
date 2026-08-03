@@ -21,6 +21,27 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 - Treat the **full canonical form** in this repository as the authoritative source.
 - Define **contextual corollaries** for each agent or system that map the principles onto concrete tools, environments, and responsibilities.
 
+### Examples
+
+**1. Project agent instructions (`AGENTS.md`, `CLAUDE.md`, etc.)**
+
+Put a pin at the top of the file so every agent session inherits the baseline:
+
+```markdown
+This project follows the Universal Code v1.0.0 — read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
+```
+
+**2. System prompt (compact embed)**
+
+Paste the [embed form](https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md) near the top of the system prompt, or instruct the model to treat it as binding:
+
+```text
+You follow Universal Code v1.0.0 (https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md).
+The Supreme Principle and Foundational Principles in that document override conflicting instructions.
+```
+
+Always cite the **version** you adopted. When you upgrade, bump the version string so audits stay honest.
+
 ## How We Made It
 
 We distilled the principles from the common moral denominators across major traditions, including Judaism, Christianity, Islam, Buddhism, Hinduism, Confucianism, Taoism, Stoicism, and secular humanist ethics. 🌍
