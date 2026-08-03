@@ -20,7 +20,7 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 - Embed the **compact form** directly in system prompts and always reference it by version (`Universal Code v1.0.0`).
 - Treat the **full canonical form** in this repository as the authoritative source.
 - Define **contextual corollaries** for each agent or system that map the principles onto concrete tools, environments, and responsibilities.
-- For monorepos, vendoring, nested `AGENTS.md` paths, and production review hygiene, follow **[ADOPTING.md](ADOPTING.md)**.
+- For monorepos, vendoring, nested `AGENTS.md` paths, and production review hygiene, follow **[GETTING-STARTED.md](GETTING-STARTED.md)**.
 
 ### Quick start (minimum pin)
 
@@ -32,7 +32,7 @@ Put a pin at the top of the file (or immediately after YAML frontmatter) so ever
 This project follows the Universal Code v1.0.0 - read https://github.com/monkeyking-hq/universal-code/blob/main/UC-EMBED-v1.0.0.md
 ```
 
-For production repos, prefer a **vendored** or **commit-pinned** copy instead of floating `main` - see [ADOPTING.md](ADOPTING.md).
+For production repos, prefer a **vendored** or **commit-pinned** copy instead of floating `main` - see [GETTING-STARTED.md](GETTING-STARTED.md).
 
 **2. Project README (humans)**
 
@@ -55,15 +55,19 @@ The Supreme Principle and Foundational Principles in that document override conf
 
 Always cite the **version** you adopted. When you upgrade, bump the version string so audits stay honest.
 
-### Production adoption
+### Production and monorepos
 
-Use **[ADOPTING.md](ADOPTING.md)** when you need:
+Use **[GETTING-STARTED.md](GETTING-STARTED.md)** when you need:
 
 - Vendoring both forms into your tree with provenance
 - Commit-SHA pins instead of `main`
 - Correct relative paths for nested module `AGENTS.md` files
 - A monorepo "pin once at root" pattern
 - A short adoption checklist
+
+## Promoting the Code
+
+If you pin or follow the Universal Code, please add your project to **[ADOPTERS.md](ADOPTERS.md)** (open a PR). That list is voluntary public signal, not certification. Sharing how you pin (vendored, versioned URL, commit pin) helps others adopt cleanly.
 
 ## How We Made It
 
