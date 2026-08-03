@@ -1,0 +1,32 @@
+name: Documentation / Typo / Link Fix
+description: Report a problem with documentation, wording, links, or formatting
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for typos, broken links, formatting issues, or small documentation improvements.
+
+        **Substantive changes to the principles themselves should go to [Discussions](https://github.com/monkeyking-hq/universal-code/discussions) first.**
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is wrong or could be improved?
+      placeholder: e.g. Broken link in README, typo in UC-v1.0.0.md, unclear wording in the embed version...
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Which file and section?
+      placeholder: e.g. README.md → How to Use It section
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix (optional)
+      description: If you already know how it should read, paste it here.
