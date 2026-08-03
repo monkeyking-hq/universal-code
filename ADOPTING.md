@@ -136,9 +136,9 @@ Always name the **version**. When you upgrade, bump the version string so audits
 
 ---
 
-## What does *not* need to change
+## Pin punctuation and scope
 
-- **ASCII hyphen vs em dash** in the pin line is a style choice. Formatters and reviewers do not treat a Unicode em dash as a defect. This repository's own examples use ASCII hyphens (` - `) for simplicity.
+- **Use ASCII hyphens only** in pin lines and examples (` - `, not a Unicode em dash or en dash). That matches this repository's Code docs and README. Do not introduce fancy dashes when copying the pin into your tree.
 - You do **not** need to restate every Foundational Principle in each module `AGENTS.md`. One clear pin (or root pin + module pointer) is enough; use module files for **contextual corollaries** (tools, environments, product rules).
 
 ---
