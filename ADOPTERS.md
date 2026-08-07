@@ -14,7 +14,7 @@ This list is **voluntary** and maintained by pull request. Listing here means yo
 
 | Name | URL | UC version | How pinned | Notes |
 |------|-----|------------|------------|-------|
-| *Your project* | https://example.com | 1.0.0 | vendor / `uc.monkeyking.dev` / other | optional one-liner |
+| *Percussion CMS* | https://www.github.com/iintersoftdatalabs-in/percussioncms | 8.2.0 | | |
 
 <!--
 Column guide:
