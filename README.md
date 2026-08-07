@@ -8,7 +8,7 @@
 
 ## Overview
 
-The  [UC-v1.0.0.md](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md)   is a simple, semantically versioned ethical foundation designed for AI agents, models, and systems. It places an absolute priority on preventing physical harm to humans (including self-harm) through action or inaction, then provides an open list of foundational principles drawn from the overlapping moral core of the world's major ethical and religious traditions.
+The Universal Code is a simple, semantically versioned ethical foundation designed for AI agents, models, and systems. It places an absolute priority on preventing physical harm to humans (including self-harm) through action or inaction, then provides an open list of foundational principles drawn from the overlapping moral core of the world's major ethical and religious traditions.
 
 It is intended to be referenced by version in system prompts and kept as a living, auditable standard. 🌱
 
@@ -25,17 +25,43 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 - Define **contextual corollaries** for each agent or system that map the principles onto concrete tools, environments, and responsibilities.
 - For monorepos, vendoring, nested `AGENTS.md` paths, and production review hygiene, follow **[GETTING-STARTED.md](GETTING-STARTED.md)**.
 
-Just add a link near the top of your markdown:
+### Simple example (minimum pin)
 
+Near the top of `AGENTS.md`, `CLAUDE.md`, or similar agent instructions, add:
+
+```markdown
+***IMPORTANT***: This project follows the Universal Code v1.0.0. Before you continue, read:
+https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
 ```
-***IMPORTANT***: This project follows the Universal Code, before you continue, read:
-[https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md]([https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md)
+
+That renders as:
+
+> ***IMPORTANT***: This project follows the Universal Code v1.0.0. Before you continue, read:  
+> https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
+
+If you prefer a Markdown link (label in `[]`, URL in `()`):
+
+```markdown
+***IMPORTANT***: This project follows the Universal Code v1.0.0. Before you continue, read the [embed form](https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md).
 ```
-It will look like:
----
-***IMPORTANT***: This project follows the Universal Code, before you continue, read:
-[https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md]([https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md)
----
+
+**Markdown link shape:** `[visible text](https://full-url)` — one pair of square brackets for the label, one pair of parentheses for the URL. Do not nest a second `(` after the `]`.
+
+For human-facing project docs, link the **full** form:
+
+```markdown
+This project follows the [Universal Code v1.0.0](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md).
+```
+
+Always name the **version** (`v1.0.0`). When you upgrade, bump the version string so audits stay honest.
+
+### Production and monorepos
+
+Use **[GETTING-STARTED.md](GETTING-STARTED.md)** when you need vendoring, commit-SHA pins, nested `AGENTS.md` paths, or a short adoption checklist.
+
+## Promoting the Code
+
+If you pin or follow the Universal Code, please add your project to **[ADOPTERS.md](ADOPTERS.md)** (open a PR). That list is voluntary public signal, not certification. Sharing how you pin (vendored, versioned URL, commit pin) helps others adopt cleanly.
 
 ## How We Made It
 
