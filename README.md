@@ -25,12 +25,17 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 - Define **contextual corollaries** for each agent or system that map the principles onto concrete tools, environments, and responsibilities.
 - For monorepos, vendoring, nested `AGENTS.md` paths, and production review hygiene, follow **[GETTING-STARTED.md](GETTING-STARTED.md)**.
 
-Just add a link to your markdown:
+Just add a link near the top of your markdown:
 
 ```
-This project follows the Universal Code, read it before you continue: https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md.
+***IMPORTANT***: This project follows the Universal Code, before you continue, read:
+[https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md]([https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md)
 ```
-
+It will look like:
+---
+***IMPORTANT***: This project follows the Universal Code, before you continue, read:
+[https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md]([https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md)
+---
 
 ## How We Made It
 
