@@ -14,7 +14,7 @@ This list is **voluntary** and maintained by pull request. Listing here means yo
 
 | Name | URL | UC version | How pinned | Notes |
 |------|-----|------------|------------|-------|
-| *Percussion CMS* | [https://www.github.com/iintersoftdatalabs-in/percussioncms](https://github.com/intersoftdatalabs-in/percussioncm) | 8.2.0 | | |
+| Percussion CMS | https://github.com/intersoftdatalabs-in/percussioncms | 1.0.0 | | |
 
 <!--
 Column guide:
