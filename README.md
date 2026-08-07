@@ -30,22 +30,8 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 Near the top of `AGENTS.md`, `CLAUDE.md`, or similar agent instructions, add:
 
 ```markdown
-***IMPORTANT***: This project follows the Universal Code v1.0.0. Before you continue, read:
-https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
+This project follows the Universal Code v1.0.0 - read https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
 ```
-
-That renders as:
-
-> ***IMPORTANT***: This project follows the Universal Code v1.0.0. Before you continue, read:  
-> https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
-
-If you prefer a Markdown link (label in `[]`, URL in `()`):
-
-```markdown
-***IMPORTANT***: This project follows the Universal Code v1.0.0. Before you continue, read the [embed form](https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md).
-```
-
-**Markdown link shape:** `[visible text](https://full-url)` — one pair of square brackets for the label, one pair of parentheses for the URL. Do not nest a second `(` after the `]`.
 
 For human-facing project docs, link the **full** form:
 

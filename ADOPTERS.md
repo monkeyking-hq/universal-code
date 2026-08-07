@@ -21,10 +21,6 @@ Column guide:
 - Name: org or project display name
 - URL: homepage or public repo (optional but preferred)
 - UC version: e.g. 1.0.0
-- How pinned: short label such as "vendored", "uc.monkeyking.dev/v1.0.0", "GitHub commit pin"
+- How pinned: short label such as "vendored", "Pages URL", "GitHub commit pin"
 - Notes: free-form, one short phrase
 -->
-
-## Seed entry
-
-When you are ready to list the first real adopter, replace the placeholder row above. Early adopters are welcome even if the pin is still a floating `main` URL; say so in **How pinned**.
