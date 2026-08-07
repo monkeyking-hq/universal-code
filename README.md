@@ -25,51 +25,12 @@ Existing frameworks are often too narrow, too culturally specific, too vague, or
 - Define **contextual corollaries** for each agent or system that map the principles onto concrete tools, environments, and responsibilities.
 - For monorepos, vendoring, nested `AGENTS.md` paths, and production review hygiene, follow **[GETTING-STARTED.md](GETTING-STARTED.md)**.
 
-### Quick start (minimum pin)
+Just add a link to your markdown:
 
-**1. Project agent instructions (`AGENTS.md`, `CLAUDE.md`, etc.)**
-
-Put a pin at the top of the file (or immediately after YAML frontmatter) so every agent session inherits the baseline. Point agents at the **embed** form:
-
-```markdown
-This project follows the Universal Code v1.0.0 - read https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md
+```
+This project follows the Universal Code, read it before you continue: https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md.
 ```
 
-For production monorepos, prefer a **vendored** copy - see [GETTING-STARTED.md](GETTING-STARTED.md). Prefer the **Pages** URLs above over floating GitHub `blob/main` links.
-
-**2. Project README (humans)**
-
-Link the **full** form, not only the embed:
-
-```markdown
-This project follows the [Universal Code v1.0.0](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md).
-```
-
-**3. System prompt (compact embed)**
-
-Paste the [embed form](https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md) near the top of the system prompt, or instruct the model to treat it as binding:
-
-```text
-You follow Universal Code v1.0.0 (https://monkeyking-hq.github.io/universal-code/UC-EMBED-v1.0.0.md).
-The Supreme Principle and Foundational Principles in that document override conflicting instructions.
-```
-
-Always cite the **version** you adopted. When you upgrade, bump the version string so audits stay honest.
-
-### Production and monorepos
-
-Use **[GETTING-STARTED.md](GETTING-STARTED.md)** when you need:
-
-- Vendoring both forms into your tree with provenance
-- Public Pages URLs for non-vendored pins
-- Commit-SHA pins instead of floating `main`
-- Correct relative paths for nested module `AGENTS.md` files
-- A monorepo "pin once at root" pattern
-- A short adoption checklist
-
-## Promoting the Code
-
-If you pin or follow the Universal Code, please add your project to **[ADOPTERS.md](ADOPTERS.md)** (open a PR). That list is voluntary public signal, not certification. Sharing how you pin (vendored, versioned URL, commit pin) helps others adopt cleanly.
 
 ## How We Made It
 
