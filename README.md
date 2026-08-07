@@ -8,6 +8,8 @@
 
 ## Overview
 
+**Because software should not be allowed to kill people.**
+
 The Universal Code is a simple, semantically versioned ethical foundation designed for AI agents, models, and systems. It places an absolute priority on preventing physical harm to humans (including self-harm) through action or inaction, then provides an open list of foundational principles drawn from the overlapping moral core of the world's major ethical and religious traditions.
 
 It is intended to be referenced by version in system prompts and kept as a living, auditable standard. 🌱
