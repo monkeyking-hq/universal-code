@@ -1,5 +1,7 @@
 # Universal Code
 
+**Because software should not be allowed to kill people.**
+
 **Version**: 1.0.0  
 **Website**: [monkeyking-hq.github.io/universal-code](https://monkeyking-hq.github.io/universal-code/)  
 **Full form**: [UC-v1.0.0.md](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md)  
@@ -7,8 +9,6 @@
 **Source repository**: [github.com/monkeyking-hq/universal-code](https://github.com/monkeyking-hq/universal-code)
 
 ## Overview
-
-**Because software should not be allowed to kill people.**
 
 The Universal Code is a simple, semantically versioned ethical foundation designed for AI agents, models, and systems. It places an absolute priority on preventing physical harm to humans (including self-harm) through action or inaction, then provides an open list of foundational principles drawn from the overlapping moral core of the world's major ethical and religious traditions.
 
