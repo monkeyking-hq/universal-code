@@ -1,7 +1,5 @@
 # Universal Code
 
-**Because software should not be allowed to kill people.**
-
 **Version**: 1.0.0  
 **Website**: [monkeyking-hq.github.io/universal-code](https://monkeyking-hq.github.io/universal-code/)  
 **Full form**: [UC-v1.0.0.md](https://monkeyking-hq.github.io/universal-code/UC-v1.0.0.md)  
@@ -15,6 +13,8 @@ The Universal Code is a simple, semantically versioned ethical foundation design
 It is intended to be referenced by version in system prompts and kept as a living, auditable standard. 🌱
 
 ## Why It's Needed
+
+**Because software should not be allowed to kill people.**
 
 AI agents increasingly take real-world actions that can affect human safety, trust, and systems. Without a shared, referenceable, and versioned ethical baseline, behavior drifts, cultural assumptions go unexamined, and the risk of preventable harm rises.
 
